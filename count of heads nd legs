@@ -1,0 +1,17 @@
+legs = int(input("Enter the number of legs: "))
+heads = int(input("Enter the number of heads: "))
+
+found = False
+
+for cows in range(0, heads + 1):
+    hens = heads - cows
+    cal_legs = 2 * hens + 4 * cows
+
+    if cal_legs == legs:
+        print("Number of hens:", hens)
+        print("Number of cows:", cows)
+        found = True
+        break
+
+if not found:
+    print("No solution")
