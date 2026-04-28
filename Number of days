@@ -1,0 +1,4 @@
+from datetime import datetime
+a=datetime(2005,10,28)
+b=datetime.now()
+print((b-a).total_seconds()/3600)
